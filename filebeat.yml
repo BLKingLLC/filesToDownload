@@ -68,15 +68,15 @@ filebeat.inputs:
 
 
 #============================= Filebeat modules ===============================
-#filebeat.config.modules:
+filebeat.config.modules:
   # Glob pattern for configuration loading
- # path: /var/db/beats/filebeat/modules.d/*.yml
+  path: /var/db/beats/filebeat/modules.d/*.yml
 
   # Set to true to enable config reloading
-  #reload.enabled: true
+  reload.enabled: true
 
   # Period on which files under path should be checked for changes
-  #reload.period: 1000s
+  reload.period: 1000s
 
 #==================== Elasticsearch template setting ==========================
 
